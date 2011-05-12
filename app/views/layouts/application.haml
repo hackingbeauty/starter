@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title
+      = base_title
+    = stylesheet_link_tag 'reset', 'application'
+    = csrf_meta_tag
+    /[if lt IE 9]
+      %script{:src => 'http://html5shim.googlecode.com/svn/trunk/html5.js'}
+  %body
+    #container
+      = render 'layouts/header'
+  = javascript_include_tag 'raphael', 'jquery.bt.min', 'application'
